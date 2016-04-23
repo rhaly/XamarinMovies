@@ -33,8 +33,23 @@
     <ConsolePause>false</ConsolePause>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="MyClass.cs" />
+    <Compile Include="Constans.cs" />
+    <Compile Include="DelegateCommand.cs" />
+    <Compile Include="Extenstions\EnumerableExtenstion.cs" />
+    <Compile Include="Extenstions\ReactiveUiExtenstions.cs" />
+    <Compile Include="IScheduleProvider.cs" />
+    <Compile Include="Model\BaseModel.cs" />
+    <Compile Include="Model\IBaseModel.cs" />
+    <Compile Include="Model\IMovieModel.cs" />
+    <Compile Include="Model\MovieModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\IMoviesApi.cs" />
+    <Compile Include="Services\IMoviesService.cs" />
+    <Compile Include="ViewModel\IMovieListViewModel.cs" />
+    <Compile Include="ViewModel\IRxViewModel.cs" />
+    <Compile Include="ViewModel\MovieListViewModel.cs" />
+    <Compile Include="ViewModel\RxViewModel.cs" />
+    <Compile Include="View\IView.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
@@ -76,6 +91,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\XamarinMovies.Contracts\XamarinMovies.Contracts.csproj">
+      <Project>{68DC6662-300B-42D2-A324-C68F739FEBC9}</Project>
+      <Name>XamarinMovies.Contracts</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\..\packages\refit.2.4.1\build\portable-net45+netcore45+wp8+wpa81+monoandroid+xamarin.ios10\refit.targets" Condition="Exists('..\..\packages\refit.2.4.1\build\portable-net45+netcore45+wp8+wpa81+monoandroid+xamarin.ios10\refit.targets')" />

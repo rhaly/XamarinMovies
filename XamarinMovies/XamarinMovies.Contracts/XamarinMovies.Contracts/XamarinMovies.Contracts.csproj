@@ -4,10 +4,10 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <ProjectGuid>{B0464FAC-900B-477D-AB43-B6CF924A9496}</ProjectGuid>
+    <ProjectGuid>{68DC6662-300B-42D2-A324-C68F739FEBC9}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>XamarinMovies</RootNamespace>
-    <AssemblyName>XamarinMovies</AssemblyName>
+    <RootNamespace>XamarinMovies.Contracts</RootNamespace>
+    <AssemblyName>XamarinMovies.Contracts</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
     <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>

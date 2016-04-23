@@ -1,4 +1,6 @@
-﻿namespace XamarinMovies.Common
+﻿using System;
+
+namespace XamarinMovies.Contracts
 {
     public class MyClass
     {

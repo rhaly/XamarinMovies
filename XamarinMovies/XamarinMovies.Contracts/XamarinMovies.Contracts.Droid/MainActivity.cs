@@ -2,9 +2,9 @@
 using Android.Widget;
 using Android.OS;
 
-namespace XamarinMovies.Droid
+namespace XamarinMovies.Contracts.Droid
 {
-	[Activity (Label = "XamarinMovies.Droid", MainLauncher = true, Icon = "@drawable/icon")]
+	[Activity (Label = "XamarinMovies.Contracts.Droid", MainLauncher = true, Icon = "@drawable/icon")]
 	public class MainActivity : Activity
 	{
 		int count = 1;

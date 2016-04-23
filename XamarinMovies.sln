@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinMovies.WinPhone", "X
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinMovies.Common", "XamarinMovies\XamarinMovies\XamarinMovies.Common.csproj", "{B0464FAC-900B-477D-AB43-B6CF924A9496}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinMovies.Contracts", "XamarinMovies\XamarinMovies.Contracts\XamarinMovies.Contracts\XamarinMovies.Contracts.csproj", "{68DC6662-300B-42D2-A324-C68F739FEBC9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinMovies.Contracts", "XamarinMovies\XamarinMovies.Contracts\XamarinMovies.Contracts.csproj", "{68DC6662-300B-42D2-A324-C68F739FEBC9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

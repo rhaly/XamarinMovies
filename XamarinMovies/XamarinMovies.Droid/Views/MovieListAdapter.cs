@@ -2,11 +2,13 @@
 using System.Reactive.Disposables;
 using System.Threading;
 using Android.Animation;
+using Android.Graphics;
 using Android.Runtime;
 using Android.Support.V7.Widget;
 using Android.Views;
 using Android.Widget;
 using ReactiveUI;
+using Squareup.Picasso;
 using XamarinMovies.Common.Model;
 
 namespace XamarinMovies.Droid.Views
@@ -89,6 +91,16 @@ namespace XamarinMovies.Droid.Views
             {
                 ViewModel = model;
                 TitleLabel.Text = model.Dto.Title;
+
+                Picasso.With(ImageView.Context)
+                   .Load(model.ImageUrl)
+                   .Config(Bitmap.Config.Rgb565)
+                   .Resize(512, 0)
+                   .OnlyScaleDown()
+                   //#if DEBUG
+                   //                .MemoryPolicy(MemoryPolicy.NoCache)
+                   //#endif
+                   .Into(ImageView);
             }
         }
     }

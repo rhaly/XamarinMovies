@@ -38,7 +38,7 @@ namespace XamarinMovies.Droid.Controls
                 _columnWidth = array.GetDimensionPixelSize(0, -1);
                 array.Recycle();
             }
-            _manager = new GridLayoutManager(Context, 1);
+            _manager = new GridLayoutManager(Context, 2);
             SetLayoutManager(_manager);
         }
 

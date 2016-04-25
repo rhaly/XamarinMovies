@@ -107,6 +107,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\MaterialDialogs\MaterialDialogs.csproj">
+      <Project>{f8befcca-7320-493e-84de-7f2108a6c9e5}</Project>
+      <Name>MaterialDialogs</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Picasso\Picasso.csproj">
+      <Project>{fa2327e3-2ac3-40e4-b508-c89e84e4f15e}</Project>
+      <Name>Picasso</Name>
+    </ProjectReference>
     <ProjectReference Include="..\XamarinMovies.Contracts\XamarinMovies.Contracts.csproj">
       <Project>{68DC6662-300B-42D2-A324-C68F739FEBC9}</Project>
       <Name>XamarinMovies.Contracts</Name>

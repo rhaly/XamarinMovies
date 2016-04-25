@@ -3,7 +3,7 @@
   <dimen name="activity_horizontal_margin">16dp</dimen>
   <dimen name="activity_vertical_margin">16dp</dimen>
   <dimen name="item_margin">1dp</dimen>
-  <dimen name="movie_item_width">190dp</dimen>
+  <dimen name="movie_item_width">204dp</dimen>
   <dimen name="movie_item_height">248dp</dimen>
 </resources>
 

@@ -63,22 +63,31 @@ namespace XamarinMovies.Droid
 			public const int abc_slide_out_top = 2130968585;
 			
 			// aapt resource value: 0x7f04000a
-			public const int design_bottom_sheet_slide_in = 2130968586;
+			public const int decelerate_cubic = 2130968586;
 			
 			// aapt resource value: 0x7f04000b
-			public const int design_bottom_sheet_slide_out = 2130968587;
+			public const int design_bottom_sheet_slide_in = 2130968587;
 			
 			// aapt resource value: 0x7f04000c
-			public const int design_fab_in = 2130968588;
+			public const int design_bottom_sheet_slide_out = 2130968588;
 			
 			// aapt resource value: 0x7f04000d
-			public const int design_fab_out = 2130968589;
+			public const int design_fab_in = 2130968589;
 			
 			// aapt resource value: 0x7f04000e
-			public const int design_snackbar_in = 2130968590;
+			public const int design_fab_out = 2130968590;
 			
 			// aapt resource value: 0x7f04000f
-			public const int design_snackbar_out = 2130968591;
+			public const int design_snackbar_in = 2130968591;
+			
+			// aapt resource value: 0x7f040010
+			public const int design_snackbar_out = 2130968592;
+			
+			// aapt resource value: 0x7f040011
+			public const int popup_enter = 2130968593;
+			
+			// aapt resource value: 0x7f040012
+			public const int popup_exit = 2130968594;
 			
 			static Animation()
 			{
@@ -603,6 +612,87 @@ namespace XamarinMovies.Droid
 			// aapt resource value: 0x7f0100c8
 			public const int maxButtonHeight = 2130772168;
 			
+			// aapt resource value: 0x7f01011a
+			public const int md_background_color = 2130772250;
+			
+			// aapt resource value: 0x7f01011b
+			public const int md_btn_negative_selector = 2130772251;
+			
+			// aapt resource value: 0x7f01011c
+			public const int md_btn_neutral_selector = 2130772252;
+			
+			// aapt resource value: 0x7f01011d
+			public const int md_btn_positive_selector = 2130772253;
+			
+			// aapt resource value: 0x7f01011e
+			public const int md_btn_stacked_selector = 2130772254;
+			
+			// aapt resource value: 0x7f01011f
+			public const int md_btnstacked_gravity = 2130772255;
+			
+			// aapt resource value: 0x7f010120
+			public const int md_buttons_gravity = 2130772256;
+			
+			// aapt resource value: 0x7f010121
+			public const int md_content_color = 2130772257;
+			
+			// aapt resource value: 0x7f010122
+			public const int md_content_gravity = 2130772258;
+			
+			// aapt resource value: 0x7f010123
+			public const int md_dark_theme = 2130772259;
+			
+			// aapt resource value: 0x7f010124
+			public const int md_divider = 2130772260;
+			
+			// aapt resource value: 0x7f010125
+			public const int md_divider_color = 2130772261;
+			
+			// aapt resource value: 0x7f010126
+			public const int md_icon = 2130772262;
+			
+			// aapt resource value: 0x7f010127
+			public const int md_icon_limit_icon_to_default_size = 2130772263;
+			
+			// aapt resource value: 0x7f010128
+			public const int md_icon_max_size = 2130772264;
+			
+			// aapt resource value: 0x7f010129
+			public const int md_item_color = 2130772265;
+			
+			// aapt resource value: 0x7f01012a
+			public const int md_items_gravity = 2130772266;
+			
+			// aapt resource value: 0x7f01012b
+			public const int md_list_selector = 2130772267;
+			
+			// aapt resource value: 0x7f01012c
+			public const int md_medium_font = 2130772268;
+			
+			// aapt resource value: 0x7f01012d
+			public const int md_negative_color = 2130772269;
+			
+			// aapt resource value: 0x7f01012e
+			public const int md_neutral_color = 2130772270;
+			
+			// aapt resource value: 0x7f01012f
+			public const int md_positive_color = 2130772271;
+			
+			// aapt resource value: 0x7f010134
+			public const int md_reduce_padding_no_title_no_buttons = 2130772276;
+			
+			// aapt resource value: 0x7f010130
+			public const int md_regular_font = 2130772272;
+			
+			// aapt resource value: 0x7f010131
+			public const int md_title_color = 2130772273;
+			
+			// aapt resource value: 0x7f010132
+			public const int md_title_gravity = 2130772274;
+			
+			// aapt resource value: 0x7f010133
+			public const int md_widget_color = 2130772275;
+			
 			// aapt resource value: 0x7f0100a3
 			public const int measureWithLargestChild = 2130772131;
 			
@@ -989,32 +1079,32 @@ namespace XamarinMovies.Droid
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f0b0048
-			public const int abc_background_cache_hint_selector_material_dark = 2131427400;
+			// aapt resource value: 0x7f0b004f
+			public const int abc_background_cache_hint_selector_material_dark = 2131427407;
 			
-			// aapt resource value: 0x7f0b0049
-			public const int abc_background_cache_hint_selector_material_light = 2131427401;
+			// aapt resource value: 0x7f0b0050
+			public const int abc_background_cache_hint_selector_material_light = 2131427408;
 			
-			// aapt resource value: 0x7f0b004a
-			public const int abc_color_highlight_material = 2131427402;
+			// aapt resource value: 0x7f0b0051
+			public const int abc_color_highlight_material = 2131427409;
 			
 			// aapt resource value: 0x7f0b0000
 			public const int abc_input_method_navigation_guard = 2131427328;
 			
-			// aapt resource value: 0x7f0b004b
-			public const int abc_primary_text_disable_only_material_dark = 2131427403;
+			// aapt resource value: 0x7f0b0052
+			public const int abc_primary_text_disable_only_material_dark = 2131427410;
 			
-			// aapt resource value: 0x7f0b004c
-			public const int abc_primary_text_disable_only_material_light = 2131427404;
+			// aapt resource value: 0x7f0b0053
+			public const int abc_primary_text_disable_only_material_light = 2131427411;
 			
-			// aapt resource value: 0x7f0b004d
-			public const int abc_primary_text_material_dark = 2131427405;
+			// aapt resource value: 0x7f0b0054
+			public const int abc_primary_text_material_dark = 2131427412;
 			
-			// aapt resource value: 0x7f0b004e
-			public const int abc_primary_text_material_light = 2131427406;
+			// aapt resource value: 0x7f0b0055
+			public const int abc_primary_text_material_light = 2131427413;
 			
-			// aapt resource value: 0x7f0b004f
-			public const int abc_search_url_text = 2131427407;
+			// aapt resource value: 0x7f0b0056
+			public const int abc_search_url_text = 2131427414;
 			
 			// aapt resource value: 0x7f0b0001
 			public const int abc_search_url_text_normal = 2131427329;
@@ -1025,11 +1115,11 @@ namespace XamarinMovies.Droid
 			// aapt resource value: 0x7f0b0003
 			public const int abc_search_url_text_selected = 2131427331;
 			
-			// aapt resource value: 0x7f0b0050
-			public const int abc_secondary_text_material_dark = 2131427408;
+			// aapt resource value: 0x7f0b0057
+			public const int abc_secondary_text_material_dark = 2131427415;
 			
-			// aapt resource value: 0x7f0b0051
-			public const int abc_secondary_text_material_light = 2131427409;
+			// aapt resource value: 0x7f0b0058
+			public const int abc_secondary_text_material_light = 2131427416;
 			
 			// aapt resource value: 0x7f0b0004
 			public const int accent_material_dark = 2131427332;
@@ -1073,17 +1163,17 @@ namespace XamarinMovies.Droid
 			// aapt resource value: 0x7f0b0011
 			public const int button_material_light = 2131427345;
 			
-			// aapt resource value: 0x7f0b0046
-			public const int colorAccent = 2131427398;
+			// aapt resource value: 0x7f0b004d
+			public const int colorAccent = 2131427405;
 			
-			// aapt resource value: 0x7f0b0047
-			public const int colorMainBackground = 2131427399;
+			// aapt resource value: 0x7f0b004e
+			public const int colorMainBackground = 2131427406;
 			
-			// aapt resource value: 0x7f0b0044
-			public const int colorPrimary = 2131427396;
+			// aapt resource value: 0x7f0b004b
+			public const int colorPrimary = 2131427403;
 			
-			// aapt resource value: 0x7f0b0045
-			public const int colorPrimaryDark = 2131427397;
+			// aapt resource value: 0x7f0b004c
+			public const int colorPrimaryDark = 2131427404;
 			
 			// aapt resource value: 0x7f0b003a
 			public const int design_fab_shadow_end_color = 2131427386;
@@ -1181,6 +1271,27 @@ namespace XamarinMovies.Droid
 			// aapt resource value: 0x7f0b0027
 			public const int material_grey_900 = 2131427367;
 			
+			// aapt resource value: 0x7f0b0044
+			public const int md_btn_selected = 2131427396;
+			
+			// aapt resource value: 0x7f0b0045
+			public const int md_btn_selected_dark = 2131427397;
+			
+			// aapt resource value: 0x7f0b0046
+			public const int md_divider_black = 2131427398;
+			
+			// aapt resource value: 0x7f0b0047
+			public const int md_divider_white = 2131427399;
+			
+			// aapt resource value: 0x7f0b0048
+			public const int md_edittext_error = 2131427400;
+			
+			// aapt resource value: 0x7f0b0049
+			public const int md_material_blue_600 = 2131427401;
+			
+			// aapt resource value: 0x7f0b004a
+			public const int md_material_blue_800 = 2131427402;
+			
 			// aapt resource value: 0x7f0b0028
 			public const int primary_dark_material_dark = 2131427368;
 			
@@ -1229,11 +1340,11 @@ namespace XamarinMovies.Droid
 			// aapt resource value: 0x7f0b0037
 			public const int switch_thumb_disabled_material_light = 2131427383;
 			
-			// aapt resource value: 0x7f0b0052
-			public const int switch_thumb_material_dark = 2131427410;
+			// aapt resource value: 0x7f0b0059
+			public const int switch_thumb_material_dark = 2131427417;
 			
-			// aapt resource value: 0x7f0b0053
-			public const int switch_thumb_material_light = 2131427411;
+			// aapt resource value: 0x7f0b005a
+			public const int switch_thumb_material_light = 2131427418;
 			
 			// aapt resource value: 0x7f0b0038
 			public const int switch_thumb_normal_material_dark = 2131427384;
@@ -1455,11 +1566,14 @@ namespace XamarinMovies.Droid
 			// aapt resource value: 0x7f050007
 			public const int abc_text_size_title_material_toolbar = 2131034119;
 			
-			// aapt resource value: 0x7f05006b
-			public const int activity_horizontal_margin = 2131034219;
+			// aapt resource value: 0x7f05008b
+			public const int activity_horizontal_margin = 2131034251;
 			
-			// aapt resource value: 0x7f05006c
-			public const int activity_vertical_margin = 2131034220;
+			// aapt resource value: 0x7f05008c
+			public const int activity_vertical_margin = 2131034252;
+			
+			// aapt resource value: 0x7f05006b
+			public const int circular_progress_border = 2131034219;
 			
 			// aapt resource value: 0x7f050056
 			public const int design_appbar_elevation = 2131034198;
@@ -1563,8 +1677,8 @@ namespace XamarinMovies.Droid
 			// aapt resource value: 0x7f05004a
 			public const int highlight_alpha_material_light = 2131034186;
 			
-			// aapt resource value: 0x7f05006d
-			public const int item_margin = 2131034221;
+			// aapt resource value: 0x7f05008d
+			public const int item_margin = 2131034253;
 			
 			// aapt resource value: 0x7f050000
 			public const int item_touch_helper_max_drag_scroll_per_frame = 2131034112;
@@ -1575,11 +1689,104 @@ namespace XamarinMovies.Droid
 			// aapt resource value: 0x7f050002
 			public const int item_touch_helper_swipe_escape_velocity = 2131034114;
 			
-			// aapt resource value: 0x7f05006f
-			public const int movie_item_height = 2131034223;
+			// aapt resource value: 0x7f05006c
+			public const int md_action_corner_radius = 2131034220;
+			
+			// aapt resource value: 0x7f05006d
+			public const int md_bg_corner_radius = 2131034221;
 			
 			// aapt resource value: 0x7f05006e
-			public const int movie_item_width = 2131034222;
+			public const int md_button_frame_vertical_padding = 2131034222;
+			
+			// aapt resource value: 0x7f05006f
+			public const int md_button_height = 2131034223;
+			
+			// aapt resource value: 0x7f050070
+			public const int md_button_inset_horizontal = 2131034224;
+			
+			// aapt resource value: 0x7f050071
+			public const int md_button_inset_vertical = 2131034225;
+			
+			// aapt resource value: 0x7f050072
+			public const int md_button_min_width = 2131034226;
+			
+			// aapt resource value: 0x7f050073
+			public const int md_button_padding_frame_side = 2131034227;
+			
+			// aapt resource value: 0x7f050074
+			public const int md_button_padding_horizontal = 2131034228;
+			
+			// aapt resource value: 0x7f050075
+			public const int md_button_padding_horizontal_internalexternal = 2131034229;
+			
+			// aapt resource value: 0x7f050076
+			public const int md_button_padding_vertical = 2131034230;
+			
+			// aapt resource value: 0x7f050077
+			public const int md_button_textpadding_horizontal = 2131034231;
+			
+			// aapt resource value: 0x7f050078
+			public const int md_button_textsize = 2131034232;
+			
+			// aapt resource value: 0x7f050079
+			public const int md_content_padding_bottom = 2131034233;
+			
+			// aapt resource value: 0x7f05007a
+			public const int md_content_padding_top = 2131034234;
+			
+			// aapt resource value: 0x7f05007b
+			public const int md_content_textsize = 2131034235;
+			
+			// aapt resource value: 0x7f05007c
+			public const int md_dialog_frame_margin = 2131034236;
+			
+			// aapt resource value: 0x7f05007d
+			public const int md_divider_height = 2131034237;
+			
+			// aapt resource value: 0x7f05007e
+			public const int md_icon_margin = 2131034238;
+			
+			// aapt resource value: 0x7f05007f
+			public const int md_icon_max_size = 2131034239;
+			
+			// aapt resource value: 0x7f050080
+			public const int md_listitem_control_margin = 2131034240;
+			
+			// aapt resource value: 0x7f050081
+			public const int md_listitem_height = 2131034241;
+			
+			// aapt resource value: 0x7f050082
+			public const int md_listitem_margin_left = 2131034242;
+			
+			// aapt resource value: 0x7f050083
+			public const int md_listitem_textsize = 2131034243;
+			
+			// aapt resource value: 0x7f050084
+			public const int md_neutral_button_margin = 2131034244;
+			
+			// aapt resource value: 0x7f050085
+			public const int md_notitle_vertical_padding = 2131034245;
+			
+			// aapt resource value: 0x7f050086
+			public const int md_simplelist_icon = 2131034246;
+			
+			// aapt resource value: 0x7f050087
+			public const int md_simplelist_icon_margin = 2131034247;
+			
+			// aapt resource value: 0x7f050088
+			public const int md_simplelistitem_padding_top = 2131034248;
+			
+			// aapt resource value: 0x7f050089
+			public const int md_title_frame_margin_bottom = 2131034249;
+			
+			// aapt resource value: 0x7f05008a
+			public const int md_title_textsize = 2131034250;
+			
+			// aapt resource value: 0x7f05008f
+			public const int movie_item_height = 2131034255;
+			
+			// aapt resource value: 0x7f05008e
+			public const int movie_item_width = 2131034254;
 			
 			// aapt resource value: 0x7f05004b
 			public const int notification_large_icon_height = 2131034187;
@@ -1838,7 +2045,43 @@ namespace XamarinMovies.Droid
 			public const int Icon = 2130837581;
 			
 			// aapt resource value: 0x7f02004e
-			public const int notification_template_icon_bg = 2130837582;
+			public const int md_btn_selected = 2130837582;
+			
+			// aapt resource value: 0x7f02004f
+			public const int md_btn_selected_dark = 2130837583;
+			
+			// aapt resource value: 0x7f020050
+			public const int md_btn_selector = 2130837584;
+			
+			// aapt resource value: 0x7f020051
+			public const int md_btn_selector_dark = 2130837585;
+			
+			// aapt resource value: 0x7f020052
+			public const int md_btn_selector_ripple = 2130837586;
+			
+			// aapt resource value: 0x7f020053
+			public const int md_btn_selector_ripple_dark = 2130837587;
+			
+			// aapt resource value: 0x7f020054
+			public const int md_btn_shape = 2130837588;
+			
+			// aapt resource value: 0x7f020055
+			public const int md_item_selected = 2130837589;
+			
+			// aapt resource value: 0x7f020056
+			public const int md_item_selected_dark = 2130837590;
+			
+			// aapt resource value: 0x7f020057
+			public const int md_selector = 2130837591;
+			
+			// aapt resource value: 0x7f020058
+			public const int md_selector_dark = 2130837592;
+			
+			// aapt resource value: 0x7f020059
+			public const int md_transparent = 2130837593;
+			
+			// aapt resource value: 0x7f02005a
+			public const int notification_template_icon_bg = 2130837594;
 			
 			static Drawable()
 			{
@@ -1853,8 +2096,8 @@ namespace XamarinMovies.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f060079
-			public const int action0 = 2131099769;
+			// aapt resource value: 0x7f060086
+			public const int action0 = 2131099782;
 			
 			// aapt resource value: 0x7f06005a
 			public const int action_bar = 2131099738;
@@ -1880,8 +2123,8 @@ namespace XamarinMovies.Droid
 			// aapt resource value: 0x7f06005b
 			public const int action_context_bar = 2131099739;
 			
-			// aapt resource value: 0x7f06007d
-			public const int action_divider = 2131099773;
+			// aapt resource value: 0x7f06008a
+			public const int action_divider = 2131099786;
 			
 			// aapt resource value: 0x7f060003
 			public const int action_menu_divider = 2131099651;
@@ -1907,8 +2150,8 @@ namespace XamarinMovies.Droid
 			// aapt resource value: 0x7f06001e
 			public const int always = 2131099678;
 			
-			// aapt resource value: 0x7f060076
-			public const int appbar = 2131099766;
+			// aapt resource value: 0x7f060083
+			public const int appbar = 2131099779;
 			
 			// aapt resource value: 0x7f06001b
 			public const int beginning = 2131099675;
@@ -1916,11 +2159,20 @@ namespace XamarinMovies.Droid
 			// aapt resource value: 0x7f06002a
 			public const int bottom = 2131099690;
 			
+			// aapt resource value: 0x7f06007b
+			public const int buttonDefaultNegative = 2131099771;
+			
+			// aapt resource value: 0x7f06007a
+			public const int buttonDefaultNeutral = 2131099770;
+			
+			// aapt resource value: 0x7f06007c
+			public const int buttonDefaultPositive = 2131099772;
+			
 			// aapt resource value: 0x7f060044
 			public const int buttonPanel = 2131099716;
 			
-			// aapt resource value: 0x7f06007a
-			public const int cancel_action = 2131099770;
+			// aapt resource value: 0x7f060087
+			public const int cancel_action = 2131099783;
 			
 			// aapt resource value: 0x7f06002b
 			public const int center = 2131099691;
@@ -1934,8 +2186,8 @@ namespace XamarinMovies.Droid
 			// aapt resource value: 0x7f060052
 			public const int checkbox = 2131099730;
 			
-			// aapt resource value: 0x7f060080
-			public const int chronometer = 2131099776;
+			// aapt resource value: 0x7f06008d
+			public const int chronometer = 2131099789;
 			
 			// aapt resource value: 0x7f060033
 			public const int clip_horizontal = 2131099699;
@@ -1946,14 +2198,32 @@ namespace XamarinMovies.Droid
 			// aapt resource value: 0x7f06001f
 			public const int collapseActionView = 2131099679;
 			
+			// aapt resource value: 0x7f060073
+			public const int content = 2131099763;
+			
+			// aapt resource value: 0x7f060078
+			public const int contentListView = 2131099768;
+			
+			// aapt resource value: 0x7f060077
+			public const int contentListViewFrame = 2131099767;
+			
 			// aapt resource value: 0x7f06004a
 			public const int contentPanel = 2131099722;
+			
+			// aapt resource value: 0x7f060072
+			public const int contentScrollView = 2131099762;
+			
+			// aapt resource value: 0x7f060079
+			public const int control = 2131099769;
 			
 			// aapt resource value: 0x7f060050
 			public const int custom = 2131099728;
 			
 			// aapt resource value: 0x7f06004f
 			public const int customPanel = 2131099727;
+			
+			// aapt resource value: 0x7f060075
+			public const int customViewFrame = 2131099765;
 			
 			// aapt resource value: 0x7f060058
 			public const int decor_content_parent = 2131099736;
@@ -1985,8 +2255,8 @@ namespace XamarinMovies.Droid
 			// aapt resource value: 0x7f06001c
 			public const int end = 2131099676;
 			
-			// aapt resource value: 0x7f060085
-			public const int end_padder = 2131099781;
+			// aapt resource value: 0x7f060092
+			public const int end_padder = 2131099794;
 			
 			// aapt resource value: 0x7f060023
 			public const int enterAlways = 2131099683;
@@ -2030,29 +2300,32 @@ namespace XamarinMovies.Droid
 			// aapt resource value: 0x7f06003f
 			public const int image = 2131099711;
 			
-			// aapt resource value: 0x7f060084
-			public const int info = 2131099780;
+			// aapt resource value: 0x7f060091
+			public const int info = 2131099793;
 			
-			// aapt resource value: 0x7f060072
-			public const int itemContent = 2131099762;
+			// aapt resource value: 0x7f06007f
+			public const int itemContent = 2131099775;
 			
-			// aapt resource value: 0x7f060073
-			public const int itemMovieCover = 2131099763;
+			// aapt resource value: 0x7f060080
+			public const int itemMovieCover = 2131099776;
 			
-			// aapt resource value: 0x7f060074
-			public const int itemMovieTitle = 2131099764;
+			// aapt resource value: 0x7f060081
+			public const int itemMovieTitle = 2131099777;
 			
 			// aapt resource value: 0x7f060000
 			public const int item_touch_helper_previous_elevation = 2131099648;
 			
+			// aapt resource value: 0x7f06007d
+			public const int label = 2131099773;
+			
 			// aapt resource value: 0x7f06002f
 			public const int left = 2131099695;
 			
-			// aapt resource value: 0x7f06007e
-			public const int line1 = 2131099774;
+			// aapt resource value: 0x7f06008b
+			public const int line1 = 2131099787;
 			
-			// aapt resource value: 0x7f060082
-			public const int line3 = 2131099778;
+			// aapt resource value: 0x7f06008f
+			public const int line3 = 2131099791;
 			
 			// aapt resource value: 0x7f06000b
 			public const int listMode = 2131099659;
@@ -2060,20 +2333,23 @@ namespace XamarinMovies.Droid
 			// aapt resource value: 0x7f060041
 			public const int list_item = 2131099713;
 			
-			// aapt resource value: 0x7f060075
-			public const int main_content = 2131099765;
+			// aapt resource value: 0x7f060082
+			public const int main_content = 2131099778;
 			
-			// aapt resource value: 0x7f06007c
-			public const int media_actions = 2131099772;
+			// aapt resource value: 0x7f060089
+			public const int media_actions = 2131099785;
 			
 			// aapt resource value: 0x7f06001d
 			public const int middle = 2131099677;
 			
+			// aapt resource value: 0x7f060076
+			public const int minMax = 2131099766;
+			
 			// aapt resource value: 0x7f060037
 			public const int mini = 2131099703;
 			
-			// aapt resource value: 0x7f060078
-			public const int moviesList = 2131099768;
+			// aapt resource value: 0x7f060085
+			public const int moviesList = 2131099781;
 			
 			// aapt resource value: 0x7f060016
 			public const int multiply = 2131099670;
@@ -2110,6 +2386,9 @@ namespace XamarinMovies.Droid
 			
 			// aapt resource value: 0x7f060030
 			public const int right = 2131099696;
+			
+			// aapt resource value: 0x7f060074
+			public const int root = 2131099764;
 			
 			// aapt resource value: 0x7f060017
 			public const int screen = 2131099671;
@@ -2201,8 +2480,8 @@ namespace XamarinMovies.Droid
 			// aapt resource value: 0x7f060031
 			public const int start = 2131099697;
 			
-			// aapt resource value: 0x7f06007b
-			public const int status_bar_latest_event_content = 2131099771;
+			// aapt resource value: 0x7f060088
+			public const int status_bar_latest_event_content = 2131099784;
 			
 			// aapt resource value: 0x7f060065
 			public const int submit_area = 2131099749;
@@ -2210,26 +2489,29 @@ namespace XamarinMovies.Droid
 			// aapt resource value: 0x7f06000d
 			public const int tabMode = 2131099661;
 			
-			// aapt resource value: 0x7f060083
-			public const int text = 2131099779;
+			// aapt resource value: 0x7f060090
+			public const int text = 2131099792;
 			
-			// aapt resource value: 0x7f060081
-			public const int text2 = 2131099777;
+			// aapt resource value: 0x7f06008e
+			public const int text2 = 2131099790;
 			
 			// aapt resource value: 0x7f06004d
 			public const int textSpacerNoButtons = 2131099725;
 			
-			// aapt resource value: 0x7f06007f
-			public const int time = 2131099775;
+			// aapt resource value: 0x7f06008c
+			public const int time = 2131099788;
 			
 			// aapt resource value: 0x7f060043
 			public const int title = 2131099715;
 			
+			// aapt resource value: 0x7f06007e
+			public const int titleFrame = 2131099774;
+			
 			// aapt resource value: 0x7f060048
 			public const int title_template = 2131099720;
 			
-			// aapt resource value: 0x7f060077
-			public const int toolbar = 2131099767;
+			// aapt resource value: 0x7f060084
+			public const int toolbar = 2131099780;
 			
 			// aapt resource value: 0x7f060032
 			public const int top = 2131099698;
@@ -2414,46 +2696,97 @@ namespace XamarinMovies.Droid
 			public const int design_navigation_menu_item = 2130903076;
 			
 			// aapt resource value: 0x7f030025
-			public const int MovieListItem = 2130903077;
+			public const int md_dialog_basic = 2130903077;
 			
 			// aapt resource value: 0x7f030026
-			public const int MoviesList = 2130903078;
+			public const int md_dialog_custom = 2130903078;
 			
 			// aapt resource value: 0x7f030027
-			public const int notification_media_action = 2130903079;
+			public const int md_dialog_input = 2130903079;
 			
 			// aapt resource value: 0x7f030028
-			public const int notification_media_cancel_action = 2130903080;
+			public const int md_dialog_list = 2130903080;
 			
 			// aapt resource value: 0x7f030029
-			public const int notification_template_big_media = 2130903081;
+			public const int md_dialog_progress = 2130903081;
 			
 			// aapt resource value: 0x7f03002a
-			public const int notification_template_big_media_narrow = 2130903082;
+			public const int md_dialog_progress_indeterminate = 2130903082;
 			
 			// aapt resource value: 0x7f03002b
-			public const int notification_template_lines = 2130903083;
+			public const int md_dialog_progress_indeterminate_horizontal = 2130903083;
 			
 			// aapt resource value: 0x7f03002c
-			public const int notification_template_media = 2130903084;
+			public const int md_listitem = 2130903084;
 			
 			// aapt resource value: 0x7f03002d
-			public const int notification_template_part_chronometer = 2130903085;
+			public const int md_listitem_multichoice = 2130903085;
 			
 			// aapt resource value: 0x7f03002e
-			public const int notification_template_part_time = 2130903086;
+			public const int md_listitem_singlechoice = 2130903086;
 			
 			// aapt resource value: 0x7f03002f
-			public const int select_dialog_item_material = 2130903087;
+			public const int md_simplelist_item = 2130903087;
 			
 			// aapt resource value: 0x7f030030
-			public const int select_dialog_multichoice_material = 2130903088;
+			public const int md_stub_actionbuttons = 2130903088;
 			
 			// aapt resource value: 0x7f030031
-			public const int select_dialog_singlechoice_material = 2130903089;
+			public const int md_stub_inputpref = 2130903089;
 			
 			// aapt resource value: 0x7f030032
-			public const int support_simple_spinner_dropdown_item = 2130903090;
+			public const int md_stub_progress = 2130903090;
+			
+			// aapt resource value: 0x7f030033
+			public const int md_stub_progress_indeterminate = 2130903091;
+			
+			// aapt resource value: 0x7f030034
+			public const int md_stub_progress_indeterminate_horizontal = 2130903092;
+			
+			// aapt resource value: 0x7f030035
+			public const int md_stub_titleframe = 2130903093;
+			
+			// aapt resource value: 0x7f030036
+			public const int MovieListItem = 2130903094;
+			
+			// aapt resource value: 0x7f030037
+			public const int MoviesList = 2130903095;
+			
+			// aapt resource value: 0x7f030038
+			public const int notification_media_action = 2130903096;
+			
+			// aapt resource value: 0x7f030039
+			public const int notification_media_cancel_action = 2130903097;
+			
+			// aapt resource value: 0x7f03003a
+			public const int notification_template_big_media = 2130903098;
+			
+			// aapt resource value: 0x7f03003b
+			public const int notification_template_big_media_narrow = 2130903099;
+			
+			// aapt resource value: 0x7f03003c
+			public const int notification_template_lines = 2130903100;
+			
+			// aapt resource value: 0x7f03003d
+			public const int notification_template_media = 2130903101;
+			
+			// aapt resource value: 0x7f03003e
+			public const int notification_template_part_chronometer = 2130903102;
+			
+			// aapt resource value: 0x7f03003f
+			public const int notification_template_part_time = 2130903103;
+			
+			// aapt resource value: 0x7f030040
+			public const int select_dialog_item_material = 2130903104;
+			
+			// aapt resource value: 0x7f030041
+			public const int select_dialog_multichoice_material = 2130903105;
+			
+			// aapt resource value: 0x7f030042
+			public const int select_dialog_singlechoice_material = 2130903106;
+			
+			// aapt resource value: 0x7f030043
+			public const int support_simple_spinner_dropdown_item = 2130903107;
 			
 			static Layout()
 			{
@@ -2574,14 +2907,14 @@ namespace XamarinMovies.Droid
 			// aapt resource value: 0x7f09013f
 			public const int Animation_Design_BottomSheetDialog = 2131296575;
 			
-			// aapt resource value: 0x7f090157
-			public const int AppTheme = 2131296599;
+			// aapt resource value: 0x7f09015d
+			public const int AppTheme = 2131296605;
 			
-			// aapt resource value: 0x7f090158
-			public const int AppTheme_Base = 2131296600;
+			// aapt resource value: 0x7f09015e
+			public const int AppTheme_Base = 2131296606;
 			
-			// aapt resource value: 0x7f090159
-			public const int AppTheme_Transparent = 2131296601;
+			// aapt resource value: 0x7f09015f
+			public const int AppTheme_Transparent = 2131296607;
 			
 			// aapt resource value: 0x7f09008a
 			public const int Base_AlertDialog_AppCompat = 2131296394;
@@ -3011,6 +3344,24 @@ namespace XamarinMovies.Droid
 			
 			// aapt resource value: 0x7f090140
 			public const int Base_Widget_Design_TabLayout = 2131296576;
+			
+			// aapt resource value: 0x7f090159
+			public const int MD_ActionButton = 2131296601;
+			
+			// aapt resource value: 0x7f09015a
+			public const int MD_ActionButton_Text = 2131296602;
+			
+			// aapt resource value: 0x7f09015b
+			public const int MD_ActionButtonStacked = 2131296603;
+			
+			// aapt resource value: 0x7f090157
+			public const int MD_Dark = 2131296599;
+			
+			// aapt resource value: 0x7f090158
+			public const int MD_Light = 2131296600;
+			
+			// aapt resource value: 0x7f09015c
+			public const int MD_WindowAnimation = 2131296604;
 			
 			// aapt resource value: 0x7f090017
 			public const int Platform_AppCompat = 2131296279;
@@ -4581,6 +4932,12 @@ namespace XamarinMovies.Droid
 			
 			// aapt resource value: 1
 			public const int ListPopupWindow_android_dropDownVerticalOffset = 1;
+			
+			public static int[] MDRootLayout = new int[] {
+					2130772276};
+			
+			// aapt resource value: 0
+			public const int MDRootLayout_md_reduce_padding_no_title_no_buttons = 0;
 			
 			public static int[] MenuGroup = new int[] {
 					16842766,

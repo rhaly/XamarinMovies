@@ -33,6 +33,7 @@
     <ConsolePause>false</ConsolePause>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="CommonModule.cs" />
     <Compile Include="Constans.cs" />
     <Compile Include="DelegateCommand.cs" />
     <Compile Include="Extenstions\EnumerableExtenstion.cs" />

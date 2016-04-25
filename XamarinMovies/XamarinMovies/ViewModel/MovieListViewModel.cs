@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Reactive.Linq;
 using System.Windows.Input;
+using Newtonsoft.Json.Serialization;
 using ReactiveUI;
 using XamarinMovies.Common.Model;
 using XamarinMovies.Common.Services;
@@ -36,8 +38,13 @@ namespace XamarinMovies.Common.ViewModel
                 LoadMovies()
                     .SubscribeOn(_scheduleProvider.TaskPool)
                     .ObserveOn(_scheduleProvider.UiScheduler)
-                    .Subscribe(movies => _movies.AddRange(movies));
+                    .Subscribe(movies => _movies.AddRange(movies), OnError);
             }
+        }
+
+        private void OnError(Exception exception)
+        {
+            Debug.WriteLine(exception);
         }
 
         private IObservable<IEnumerable<IMovieModel>> LoadMovies()

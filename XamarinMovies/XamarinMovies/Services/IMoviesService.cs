@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Reactive.Linq;
-using Refit;
 using XamarinMovies.Common.Model;
 using XamarinMovies.Contracts.Dto;
 

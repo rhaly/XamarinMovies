@@ -15,6 +15,7 @@ namespace XamarinMovies.Droid.Views
 
         protected override void OnResume()
         {
+            CurrentActivity = this;
             base.OnResume();
             IsVisible = true;
         }

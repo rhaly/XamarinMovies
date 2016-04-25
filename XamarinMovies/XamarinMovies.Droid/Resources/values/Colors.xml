@@ -4,4 +4,9 @@
   <color name="colorPrimaryDark">#ff1a1f23</color>
   <color name="colorAccent">#E91C62</color>
   <color name="colorMainBackground">#363F44</color>
+  <color name="dialog_background">#FFD9D9D9</color>
+  <color name="dialog_content">#FF000000</color>
+  <color name="dialog_title">#FF000000</color>
+  <color name="dialog_positive">#E91C62</color>
+  <color name="dialog_negative">#E91C62</color>
 </resources>

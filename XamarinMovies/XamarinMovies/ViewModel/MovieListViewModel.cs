@@ -14,12 +14,14 @@ namespace XamarinMovies.Common.ViewModel
     public class MovieListViewModel : RxViewModel, IMovieListViewModel
     {
         private readonly IMoviesService _moviesService;
+        private readonly IDialogService _dialogService;
         private readonly IScheduleProvider _scheduleProvider;
         private string _baseImageUrl;
 
-        public MovieListViewModel(IMoviesService moviesService, IScheduleProvider scheduleProvider)
+        public MovieListViewModel(IMoviesService moviesService, IDialogService dialogService, IScheduleProvider scheduleProvider)
         {
             _moviesService = moviesService;
+            _dialogService = dialogService;
             _scheduleProvider = scheduleProvider;
             RefreshCommand = new DelegateCommand(_ => RefreshMovies());
         }
@@ -67,7 +69,8 @@ namespace XamarinMovies.Common.ViewModel
         private void OnError(Exception exception)
         {
             IsLoading = false;
-            Debug.WriteLine(exception);
+            _dialogService.ShowMessageDialog(exception.Message, "OK")
+                .Subscribe();
         }
 
         private IObservable<IEnumerable<IMovieModel>> LoadMovies()

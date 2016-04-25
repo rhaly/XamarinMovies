@@ -130,7 +130,9 @@
     <Compile Include="DroidModule.cs" />
     <Compile Include="Extenstions\DisplayMetricsExtenstions.cs" />
     <Compile Include="MoviesApplication.cs" />
+    <Compile Include="Services\DialogService.cs" />
     <Compile Include="Views\BaseActivity.cs" />
+    <Compile Include="Views\MessageDialogFragment.cs" />
     <Compile Include="Views\MovieListAdapter.cs" />
     <Compile Include="Views\MovieListView.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
@@ -162,10 +164,14 @@
     <AndroidResource Include="Resources\values-v21\Styles.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\values\Dimens.xml" />
+    <AndroidResource Include="Resources\values\Dimens.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\MovieListItem.xml" />
+    <AndroidResource Include="Resources\layout\MovieListItem.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets" Condition="Exists('..\..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets')" />

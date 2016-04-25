@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Reactive.Disposables;
+using System.Reactive.Linq;
 using System.Threading;
 using Android.Animation;
 using Android.Graphics;
@@ -9,6 +10,7 @@ using Android.Views;
 using Android.Widget;
 using ReactiveUI;
 using Squareup.Picasso;
+using XamarinMovies.Common;
 using XamarinMovies.Common.Model;
 
 namespace XamarinMovies.Droid.Views
@@ -19,10 +21,13 @@ namespace XamarinMovies.Droid.Views
         private IDisposable _inner;
         private int _previousPosition;
 
-        public MovieListAdapter(IReadOnlyReactiveList<IMovieModel> list)
+        public MovieListAdapter(IReadOnlyReactiveList<IMovieModel> list, IScheduleProvider scheduleProvider)
         {
             _list = list;
-            _inner = _list.Changed.Subscribe(_ => NotifyDataSetChanged());
+            _inner = _list.Changed
+                .Throttle(TimeSpan.FromMilliseconds(100))
+                .ObserveOn(scheduleProvider.UiScheduler)
+                .Subscribe(_ => NotifyDataSetChanged());
             HasStableIds = true;
         }
 

@@ -16,18 +16,33 @@ namespace XamarinMovies.Common.ViewModel
         private readonly IMoviesService _moviesService;
         private readonly IScheduleProvider _scheduleProvider;
         private string _baseImageUrl;
-        
+
         public MovieListViewModel(IMoviesService moviesService, IScheduleProvider scheduleProvider)
         {
             _moviesService = moviesService;
             _scheduleProvider = scheduleProvider;
+            RefreshCommand = new DelegateCommand(_ => RefreshMovies());
+        }
+
+        private void RefreshMovies()
+        {
+            LoadMovies()
+                   .SubscribeOn(_scheduleProvider.TaskPool)
+                   .ObserveOn(_scheduleProvider.UiScheduler)
+                   .Subscribe(OnMoviesLoaded, OnError);
         }
 
         private readonly ReactiveList<IMovieModel> _movies = new ReactiveList<IMovieModel>();
 
         public IReadOnlyReactiveList<IMovieModel> Movies => _movies;
 
-        public bool IsLoading { get; }
+        private bool _isLoading;
+
+        public bool IsLoading
+        {
+            get { return _isLoading; }
+            private set { this.RaiseAndSetIfChanged(ref _isLoading, value); }
+        }
 
         public ICommand RefreshCommand { get; }
 
@@ -35,20 +50,29 @@ namespace XamarinMovies.Common.ViewModel
         {
             if (Movies.IsEmpty)
             {
-                LoadMovies()
-                    .SubscribeOn(_scheduleProvider.TaskPool)
-                    .ObserveOn(_scheduleProvider.UiScheduler)
-                    .Subscribe(movies => _movies.AddRange(movies), OnError);
+                RefreshMovies();
             }
+        }
+
+        private void OnMoviesLoaded(IEnumerable<IMovieModel> movies)
+        {
+            if (!_movies.IsEmpty)
+            {
+                _movies.Clear();
+            }
+            _movies.AddRange(movies);
+            IsLoading = false;
         }
 
         private void OnError(Exception exception)
         {
+            IsLoading = false;
             Debug.WriteLine(exception);
         }
 
         private IObservable<IEnumerable<IMovieModel>> LoadMovies()
         {
+            IsLoading = true;
             if (_baseImageUrl == null)
             {
                 return _moviesService.GetBaseImageUrl()

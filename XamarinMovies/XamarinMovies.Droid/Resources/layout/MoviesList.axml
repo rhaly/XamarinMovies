@@ -18,12 +18,17 @@
             app:layout_scrollFlags="scroll|enterAlways"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
     </android.support.design.widget.AppBarLayout>
-    <XamarinMovies.Droid.Controls.AutoFitRecyclerView
-        android:id="@+id/moviesList"
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scrollbars="horizontal"
-        android:columnWidth="@dimen/movie_item_width"
-        android:clipToPadding="false"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <XamarinMovies.Droid.Controls.AutoFitRecyclerView
+            android:id="@+id/moviesList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="horizontal"
+            android:columnWidth="@dimen/movie_item_width"
+            android:clipToPadding="false" />
+    </android.support.v4.widget.SwipeRefreshLayout>
 </android.support.design.widget.CoordinatorLayout>

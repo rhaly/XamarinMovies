@@ -128,6 +128,7 @@
     <Compile Include="Controls\AutoFitRecyclerView.cs" />
     <Compile Include="Controls\MarginDecoration.cs" />
     <Compile Include="DroidModule.cs" />
+    <Compile Include="Extenstions\DisplayMetricsExtenstions.cs" />
     <Compile Include="MoviesApplication.cs" />
     <Compile Include="Views\BaseActivity.cs" />
     <Compile Include="Views\MovieListAdapter.cs" />

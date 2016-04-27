@@ -37,6 +37,7 @@ namespace XamarinMovies.Droid.Views
             SupportActionBar.SetDisplayShowTitleEnabled(true);
             this.OneWayBind(ViewModel, vm => vm.IsLoading, v => v.SwipeRefreshLayout.Refreshing);
             this.BindCommand(ViewModel, vm => vm.RefreshCommand, v => v.SwipeRefreshLayout, "Refresh");
+
             InitSwipeRefreshLayout();
 
             InitRecyclerView();
